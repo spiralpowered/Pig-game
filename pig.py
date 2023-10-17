@@ -39,7 +39,7 @@ def pig_game():
     p2 = Player(2, False)
     print('\nWelcome to The Game of Pig.')
     first_turn = random.randrange(1, 11)
-    if first_turn > 6:
+    if first_turn >= 6:
         print("Player 1 goes first.")
         p1.switch_turn()
     else:
